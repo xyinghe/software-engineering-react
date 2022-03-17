@@ -7,7 +7,7 @@ import {
 describe('createUser', () => {
   // sample user to insert
   const ripley = {
-    username: 'ellenripley',
+    username: 'aiahihai',
     password: 'lv426',
     email: 'ellenripley@aliens.com'
   };
@@ -34,6 +34,9 @@ describe('createUser', () => {
     expect(newUser.email).toEqual(ripley.email);
   });
 });
+
+
+
 
 describe('deleteUsersByUsername', () => {
 
