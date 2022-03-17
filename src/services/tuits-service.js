@@ -1,9 +1,9 @@
 import axios from "axios";
 
-// const TUITS_API = "https://cs5500-node-xyinghe.herokuapp.com/api/tuits";
-// const USERS_API = "https://cs5500-node-xyinghe.herokuapp.com/api/users";
-const TUITS_API = "http://localhost:4000/api/tuits";
-const USERS_API = "http://localhost:4000/api/users";
+const TUITS_API = "https://cs5500-node-xyinghe.herokuapp.com//api/tuits";
+const USERS_API = "https://cs5500-node-xyinghe.herokuapp.com/api/users";
+// const TUITS_API = "http://localhost:4000/api/tuits";
+// const USERS_API = "http://localhost:4000/api/users";
 
 export const findAllTuits = () =>
     axios.get(TUITS_API)
