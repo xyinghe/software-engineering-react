@@ -32,8 +32,7 @@ const Tuits = ({tuits = [], deleteTuit,
                    refreshTuits}) => {
 
     return (
-        <div className ="border border-bottom-0">
-            <ul>
+            <ul className= "ttr-tuits list-group">
                 {
                     tuits.map(tuit =>
                         <Tuit key={tuit._id}
@@ -41,7 +40,6 @@ const Tuits = ({tuits = [], deleteTuit,
                               tuit={tuit}/>)
                 }
             </ul>
-        </div>
     );
 }
 
