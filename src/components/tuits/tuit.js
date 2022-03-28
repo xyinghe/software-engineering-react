@@ -4,7 +4,7 @@ import TuitImage from "./tuit-image";
 import TuitVideo from "./tuit-video";
 import {useNavigate, Link} from "react-router-dom";
 
-const Tuit = ({tuit, deleteTuit, likeTuit, dislikeTuit}) => {
+const Tuit = ({tuit, deleteTuit, likeTuit}) => {
     const navigate = useNavigate();
     const daysOld = (tuit) => {
         const now = new Date();
@@ -28,41 +28,8 @@ const Tuit = ({tuit, deleteTuit, likeTuit, dislikeTuit}) => {
         }
         return old;
     }
-    // return (
-    //     <li className="p-2 ttr-tuit list-group-item d-flex rounded-0">
-    //         <div className="pe-2">
-    //             {
-    //                 tuit.postedBy &&
-    //                 <img src={`../images/${tuit.postedBy.username}.jpg`}
-    //                      className="ttr-width-50px rounded-circle"/>
-    //             }
-    //         </div>
-    //         <div className="w-100">
-    //             { tuit.ownedByMe === true &&
-    //             <i onClick={() => deleteTuit(tuit._id)}
-    //                className="fas fa-remove fa-2x fa-pull-right"/>
-    //             }
-    //             <h2
-    //                 className="fs-5">
-    //                 {tuit.postedBy && tuit.postedBy.username}
-    //                 @{tuit.postedBy && tuit.postedBy.username} - </h2>
-    //             {tuit.tuit}
-    //             {
-    //                 tuit.youtube &&
-    //                 <TuitVideo tuit={tuit}/>
-    //             }
-    //             {
-    //                 tuit.image &&
-    //                 <TuitImage tuit={tuit}/>
-    //             }
-    //             <TuitStats tuit={tuit}
-    //                        dislikeTuit={dislikeTuit}
-    //                        likeTuit={likeTuit}/>
-    //         </div>
-    //     </li>
-    // );
+
     return(
-        // <li onClick={() => navigate(`/tuit/${tuit._id}`)}
         <li className="p-2 ttr-tuit list-group-item d-flex rounded-0">
             <div className="pe-2">
                 {
