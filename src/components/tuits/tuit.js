@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import TuitStats from "./tuit-stats";
 import TuitImage from "./tuit-image";
 import TuitVideo from "./tuit-video";
@@ -34,14 +34,14 @@ const Tuit = ({tuit, deleteTuit, likeTuit, dislikeTuit}) => {
             <div className="pe-2">
                 {
                     tuit.postedBy &&
-                    <img src={`../images/${tuit.postedBy.username}.jpg`}
+                    <img src={`../images/${tuit.postedBy.username}.jpg`} alt = "abc"
                          className="ttr-width-50px rounded-circle"/>
                 }
             </div>
             <div className="w-100">
-                <i onClick={() => deleteTuit(tuit._id)} className="fas fa-remove fa-2x fa-pull-right"></i>
+                <i onClick={() => deleteTuit(tuit._id)} className="fas fa-remove fa-2x fa-pull-right"/>
                 <Link to={`/tuit/${tuit._id}`}>
-                    <i className="float-end fas fa-circle-ellipsis me-1"></i>
+                    <i className="float-end fas fa-circle-ellipsis me-1"/>
                 </Link>
                 <h2
                     className="fs-5">

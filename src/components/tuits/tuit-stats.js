@@ -5,22 +5,22 @@ const TuitStats = ({tuit, likeTuit, dislikeTuit = () => {}}) => {
     return (
         <div className="row mt-2">
             <div className="col">
-                <i className="far fa-message me-1"></i>
+                <i className="far fa-message me-1"/>
                 {tuit.stats && tuit.stats.replies}
             </div>
             <div className="col">
-                <i className="far fa-retweet me-1"></i>
+                <i className="far fa-retweet me-1"/>
                 {tuit.stats && tuit.stats.retuits}
             </div>
             <div className="col">
           <span onClick={() => likeTuit(tuit)}>
               {
                   tuit.stats  && tuit.stats.likes > 0 &&
-                  <i className="fa-regular fa-thumbs-up me-1" style={{color: 'red'}}></i>
+                  <i className="fa-regular fa-thumbs-up me-1" style={{color: 'red'}}/>
               }
               {
                   tuit.stats  && tuit.stats.likes <= 0 &&
-                  <i className="fa-regular fa-thumbs-up me-1"></i>
+                  <i className="fa-regular fa-thumbs-up me-1"/>
               }
               {tuit.stats && tuit.stats.likes}
           </span>
@@ -29,17 +29,17 @@ const TuitStats = ({tuit, likeTuit, dislikeTuit = () => {}}) => {
                 <span onClick={()=>dislikeTuit(tuit)}>
                     {
                         tuit.stats  && tuit.stats.dislikes > 0 &&
-                        <i className="fa-regular fa-thumbs-down me-1" style={{color: 'blue'}}></i>
+                        <i className="fa-regular fa-thumbs-down me-1" style={{color: 'blue'}}/>
                     }
                     {
                         tuit.stats  && tuit.stats.dislikes <= 0 &&
-                        <i className="fa-regular fa-thumbs-down me-1"></i>
+                        <i className="fa-regular fa-thumbs-down me-1"/>
                     }
                     {tuit.stats && tuit.stats.dislikes}
               </span>
             </div>
             <div className="col">
-                <i className="far fa-inbox-out"></i>
+                <i className="far fa-inbox-out"/>
             </div>
         </div>
     );

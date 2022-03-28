@@ -1,9 +1,9 @@
-import React,{useEffect,useState} from "react";
+import React from "react";
 import './tuits.css';
 import Tuit from "./tuit";
 import * as likesService from "../../services/likes-service";
 import * as service from "../../services/tuits-service";
-import * as authService from "../../services/auth-service";
+// import * as authService from "../../services/auth-service";
 import * as dislikesService from "../../services/dislike-service";
 const Tuits = ({tuits = [], refreshTuits}) => {
 
