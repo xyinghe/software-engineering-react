@@ -1,11 +1,10 @@
 
 
 import React, {useEffect, useState} from "react";
-import Tuits from "../tuits";
 import MyTuits from "./my-tuits";
 import MyLikes from "./my-likes";
 import MyDislikes from "./my-dislikes";
-import {HashRouter, Link, Route, Routes, useNavigate, useLocation} from "react-router-dom";
+import {Link, Route, Routes, useNavigate} from "react-router-dom";
 import * as service from "../../services/auth-service";
 
 const Profile = () => {
@@ -35,10 +34,10 @@ const Profile = () => {
           </h4>
           <span className="ps-2">67.6K Tuits</span>
           <div className="mb-5 position-relative">
-            <img className="w-100" src="../images/nasa-profile-header.jpg"/>
+            <img className="w-100" alt = "abc" src="../images/nasa-profile-header.jpg"/>
             <div className="bottom-0 left-0 position-absolute">
               <div className="position-relative">
-                <img className="position-relative ttr-z-index-1 ttr-top-40px ttr-width-150px"
+                <img className="position-relative ttr-z-index-1 ttr-top-40px ttr-width-150px" alt = "abc"
                      src="../images/nasa-3.png"/>
               </div>
             </div>

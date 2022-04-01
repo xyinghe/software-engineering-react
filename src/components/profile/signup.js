@@ -1,7 +1,15 @@
+/**
+ * @file Implements signup component
+ */
 import {useState} from "react";
 import * as service from "../../services/auth-service";
 import {useNavigate} from "react-router-dom";
 
+/**
+ * Implement signup component for new users to sign up
+ * @returns {JSX.Element} The signup frontend page
+ * @constructor
+ */
 const Signup = () => {
     const [newUser, setNewUser] = useState({});
     const navigate = useNavigate();

@@ -1,8 +1,16 @@
+/**
+ * @file Implements login component
+ */
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import {useState} from "react";
 import * as service from "../../services/auth-service";
 
+/**
+ * Implement login component for users to log in
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export const Login = () => {
     const [loginUser, setLoginUser] = useState({});
     const navigate = useNavigate()
