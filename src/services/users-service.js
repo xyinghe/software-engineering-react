@@ -6,8 +6,8 @@ const BASE_URL = "https://cs5500-node-xyinghe.herokuapp.com/api";
 
 // const BASE_URL = "http://localhost:4000/api";
 
-const LOGIN_API = `${BASE_URL}/login`;
-const USERS_API = `${BASE_URL}/users`;
+const LOGIN_API = `${BASE_URL}/api/login`;
+const USERS_API = `${BASE_URL}/api/users`;
 
 /**
  * User POST method to insert a new User
