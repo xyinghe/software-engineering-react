@@ -2,10 +2,11 @@
  * @file Implement the user service from remote API
  */
 import axios from "axios";
-const BASE_URL = "https://cs5500-node-xyinghe.herokuapp.com/api";
+// const BASE_URL = "https://cs5500-node-xyinghe.herokuapp.com/api";
 
 // const BASE_URL = "http://localhost:4000/api";
-
+// const BASE_URL = "https://cs5500-01-sp22.herokuapp.com";
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const LOGIN_API = `${BASE_URL}/api/login`;
 const USERS_API = `${BASE_URL}/api/users`;
 
