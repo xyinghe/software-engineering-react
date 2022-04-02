@@ -48,7 +48,9 @@ const Tuit = ({tuit, deleteTuit, likeTuit, dislikeTuit}) => {
                     {tuit.postedBy && tuit.postedBy.username}
                     @{tuit.postedBy && tuit.postedBy.username} -
                     <span className="ms-1">{daysOld(tuit)}</span></h2>
+                <span className='ttr-tuit'>
                 {tuit.tuit}
+                </span>
                 {
                     tuit.youtube &&
                     <TuitVideo tuit={tuit}/>
